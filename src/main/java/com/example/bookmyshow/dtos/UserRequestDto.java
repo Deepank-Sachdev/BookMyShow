@@ -1,15 +1,13 @@
-package com.example.bookmyshow.models;
+package com.example.bookmyshow.dtos;
 
-import jakarta.persistence.Entity;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-@Entity(name = "users")
-
-public class User extends BaseModel {
+public class UserRequestDto {
     private String name;
     private String email;
     private String password;
+
 }

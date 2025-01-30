@@ -1,4 +1,6 @@
 package com.example.bookmyshow.models;
 
-public class PaymentProvider {
+public enum PaymentProvider {
+    RAZORPAY,
+    STRIPE
 }

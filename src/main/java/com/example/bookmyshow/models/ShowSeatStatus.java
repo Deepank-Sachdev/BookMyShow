@@ -1,4 +1,7 @@
 package com.example.bookmyshow.models;
 
-public class ShowSeatStatus {
+public enum ShowSeatStatus {
+    AVAILABLE,
+    BOOKED,
+    BLOCKED
 }
