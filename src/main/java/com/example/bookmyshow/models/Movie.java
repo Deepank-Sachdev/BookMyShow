@@ -11,4 +11,5 @@ import java.awt.print.Book;
 @Entity
 public class Movie extends BaseModel{
     private String title;
+    private String description;
 }

@@ -22,11 +22,11 @@ public class BookMyShowApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		UserRequestDto userRequestDto = new UserRequestDto();
-		userRequestDto.setName("Deepank");
-		userRequestDto.setEmail("deepank@gmail.com");
-		userRequestDto.setPassword("pass@word");
-
-		userController.signUp(userRequestDto);
+//		UserRequestDto userRequestDto = new UserRequestDto();
+//		userRequestDto.setName("Deepank");
+//		userRequestDto.setEmail("deepank@gmail.com");
+//		userRequestDto.setPassword("pass@word");
+//
+//		userController.signUp(userRequestDto);
 	}
 }
