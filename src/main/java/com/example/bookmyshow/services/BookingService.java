@@ -52,7 +52,7 @@ public class BookingService {
 
         Optional<User> userOptional = userRepository.findById(userId);
         if(userOptional.isEmpty()){
-            throw new UserNotFound();
+            throw new UserNotFound("User not found");
         }
         User bookedby = userOptional.get();
 

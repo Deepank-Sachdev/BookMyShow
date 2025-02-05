@@ -3,6 +3,7 @@ package com.example.bookmyshow.models;
 public enum Feature {
     TWO_D,
     THREE_D,
-    DOLBY,
+    DOLBY_ATMOS,
+    DOLBY_VISION,
     IMAX
 }

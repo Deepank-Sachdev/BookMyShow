@@ -1,7 +1,6 @@
 package com.example.bookmyshow.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,11 +9,14 @@ import lombok.Setter;
 @Entity
 
 public class Seat extends BaseModel {
-    private String num;
+    private String name;
 
-    @ManyToOne
+    @Enumerated(EnumType.ORDINAL)
     private SeatType seatType;
 
     private int rowVal;
     private int colVal;
+
+    @ManyToOne
+    Screen screen;
 }

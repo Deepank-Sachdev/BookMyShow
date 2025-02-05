@@ -1,12 +1,13 @@
-package com.example.bookmyshow.dtos.RatingDto;
+package com.example.bookmyshow.dtos.CreateShowDto;
 
 import com.example.bookmyshow.dtos.ResponseStatus;
+import com.example.bookmyshow.models.Show;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class GetAverageMovieResponseDto {
+public class CreateShowResponseDTO {
     private ResponseStatus responseStatus;
-    private double averageRating;
+    private Show show;
 }

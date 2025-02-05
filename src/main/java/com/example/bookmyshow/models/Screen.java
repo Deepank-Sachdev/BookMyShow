@@ -13,10 +13,12 @@ import java.util.List;
 public class Screen extends BaseModel {
     private String name;
 
-    @OneToMany
+    @OneToMany (mappedBy = "screen", cascade = CascadeType.ALL)
     private List<Seat> seats;
 
+    private ScreenStatus status;
+
     @Enumerated(EnumType.ORDINAL)
-    @ElementCollection
+    @ElementCollection (fetch = FetchType.EAGER)
     private List<Feature> features;
 }

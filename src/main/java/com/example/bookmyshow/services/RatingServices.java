@@ -14,13 +14,13 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class RatingService{
+public class RatingServices{
 
     private MovieRepository movieRepository;
     private RatingRepository ratingRepository;
     private UserRepository userRepository;
 
-    public RatingService(MovieRepository movieRepository,
+    public RatingServices(MovieRepository movieRepository,
                              RatingRepository ratingRepository,
                              UserRepository userRepository){
         this.movieRepository = movieRepository;
@@ -31,7 +31,7 @@ public class RatingService{
     public Rating rateMovie(Long userId, Long movieId, Long rating) throws UserNotFound, MovieNotFound {
         Optional<User> userOptional = userRepository.findById(userId);
         if(userOptional.isEmpty()){
-            throw new UserNotFound();
+            throw new UserNotFound("User not found");
         }
         Optional<Movie> movieOptional = movieRepository.findById(movieId);
         if(movieOptional.isEmpty()){

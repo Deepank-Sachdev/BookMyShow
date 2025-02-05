@@ -2,6 +2,7 @@ package com.example.bookmyshow;
 
 import com.example.bookmyshow.controllers.RatingController;
 import com.example.bookmyshow.dtos.RatingDto.*;
+import com.example.bookmyshow.dtos.ResponseStatus;
 import com.example.bookmyshow.models.Movie;
 import com.example.bookmyshow.models.Rating;
 import com.example.bookmyshow.models.User;
