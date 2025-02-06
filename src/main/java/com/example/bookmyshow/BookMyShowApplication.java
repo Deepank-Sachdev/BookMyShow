@@ -1,8 +1,6 @@
 package com.example.bookmyshow;
 
-import com.example.bookmyshow.controllers.BookingController;
 import com.example.bookmyshow.controllers.UserController;
-import com.example.bookmyshow.dtos.UserRequestDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

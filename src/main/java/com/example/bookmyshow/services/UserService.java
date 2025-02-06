@@ -23,8 +23,24 @@ public class UserService {
         User user = new User();
         user.setName(name);
         user.setEmail(email);
+
+//        BCryptPasswordEncoder encryptedPassword = new BCryptPasswordEncoder();
+//        user.setPassword(encryptedPassword.encode(password));
+
         user.setPassword(password);
 
         return userRepository.save(user);
     }
+//
+//    public boolean login(String email, String password) throws Exception {
+//        Optional<User> userOptional = userRepository.findByEmail(email);
+//        if (userOptional.isEmpty()){
+//            throw new Exception("User doesn't exists. Please Signup");
+//        }
+//
+//        if(BCrypt.checkpw(password, userOptional.get().getPassword()) == true){
+//            return true;
+//        }
+//        return false;
+//    }
 }
